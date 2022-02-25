@@ -1,0 +1,452 @@
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.10.133:5000/ (Press CTRL+C to quit)
+[D 220113 06:13:18 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220113 06:13:18 __init__:74] Using AWS region 'ap-south-1'
+[D 220113 06:13:18 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [13/Jan/2022 06:13:18] "POST / HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "app.py", line 65, in <module>
+    app.run(host='0.0.0.0')
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 1008, in run_simple
+    inner()
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 948, in inner
+    srv = make_server(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 780, in make_server
+    return ThreadedWSGIServer(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 686, in __init__
+    super().__init__(server_address, handler)  # type: ignore
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+[D 220113 06:52:53 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220113 06:52:53 __init__:74] Using AWS region 'ap-south-1'
+[D 220113 06:52:53 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [13/Jan/2022 06:52:54] "POST / HTTP/1.1" 200 -
+[D 220113 06:54:00 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220113 06:54:00 __init__:74] Using AWS region 'ap-south-1'
+[D 220113 06:54:00 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [13/Jan/2022 06:54:01] "POST / HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.10.133:5000/ (Press CTRL+C to quit)
+[D 220113 09:48:02 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220113 09:48:02 __init__:74] Using AWS region 'ap-south-1'
+[D 220113 09:48:02 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [13/Jan/2022 09:48:03] "POST / HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "app.py", line 65, in <module>
+    app.run(host='0.0.0.0')
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 1008, in run_simple
+    inner()
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 948, in inner
+    srv = make_server(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 780, in make_server
+    return ThreadedWSGIServer(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 686, in __init__
+    super().__init__(server_address, handler)  # type: ignore
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.10.133:5000/ (Press CTRL+C to quit)
+[D 220113 17:43:23 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220113 17:43:23 __init__:74] Using AWS region 'ap-south-1'
+[D 220113 17:43:23 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [13/Jan/2022 17:43:24] "POST / HTTP/1.1" 200 -
+[D 220113 17:47:20 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220113 17:47:20 __init__:74] Using AWS region 'ap-south-1'
+[D 220113 17:47:20 __init__:83] Client will be using profile 'default' from boto3 session
+[D 220113 17:47:20 actions:100] Picked EC2 instances 'defaultdict(typing.List, {'normal': ['i-0c90c00b949e3ebab']})' from AZ '' to be stopped
+[D 220113 17:47:20 actions:527] Stopping instances: ['i-0c90c00b949e3ebab']
+127.0.0.1 - - [13/Jan/2022 17:47:20] "POST / HTTP/1.1" 200 -
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.10.133:5000/ (Press CTRL+C to quit)
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "app.py", line 65, in <module>
+    app.run(host='0.0.0.0')
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 1008, in run_simple
+    inner()
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 948, in inner
+    srv = make_server(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 780, in make_server
+    return ThreadedWSGIServer(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 686, in __init__
+    super().__init__(server_address, handler)  # type: ignore
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "app.py", line 65, in <module>
+    app.run(host='0.0.0.0')
+  File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 922, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 1008, in run_simple
+    inner()
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 948, in inner
+    srv = make_server(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 780, in make_server
+    return ThreadedWSGIServer(
+  File "/usr/local/lib/python3.8/dist-packages/werkzeug/serving.py", line 686, in __init__
+    super().__init__(server_address, handler)  # type: ignore
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.31.254:5000/ (Press CTRL+C to quit)
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.31.254:5000/ (Press CTRL+C to quit)
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.31.254:5000/ (Press CTRL+C to quit)
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.31.254:5000/ (Press CTRL+C to quit)
+[D 220225 05:01:29 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220225 05:01:29 __init__:74] Using AWS region 'ap-south-1'
+[D 220225 05:01:29 __init__:83] Client will be using profile 'default' from boto3 session
+[D 220225 05:01:29 actions:100] Picked EC2 instances 'defaultdict(typing.List, {'normal': ['i-012ae2e9ff0985701']})' from AZ '' to be stopped
+[D 220225 05:01:29 actions:527] Stopping instances: ['i-012ae2e9ff0985701']
+127.0.0.1 - - [25/Feb/2022 05:01:30] "POST / HTTP/1.1" 200 -
+[D 220225 05:16:22 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220225 05:16:22 __init__:74] Using AWS region 'ap-south-1'
+[D 220225 05:16:22 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [25/Feb/2022 05:16:22] "POST / HTTP/1.1" 200 -
+* minikube v1.22.0 on Ubuntu 20.04
+* Using the none driver based on existing profile
+* Starting control plane node minikube in cluster minikube
+* Updating the running none "minikube" bare metal machine ...
+* OS release is Ubuntu 20.04.2 LTS
+* minikube 1.25.2 is available! Download it: https://github.com/kubernetes/minikube/releases/tag/v1.25.2
+* To disable this notice, run: 'minikube config set WantUpdateNotification false'
+
+* Preparing Kubernetes v1.21.2 on Docker 20.10.7 ...
+  - kubelet.resolv-conf=/run/systemd/resolve/resolv.conf
+! Unable to restart cluster, will reset it: apiserver health: apiserver healthz never reported healthy: cluster wait timed out during healthz check
+  - Generating certificates and keys ...
+  - Booting up control plane ...
+! initialization failed, will try again: wait: /bin/bash -c "sudo env PATH=/var/lib/minikube/binaries/v1.21.2:$PATH kubeadm init --config /var/tmp/minikube/kubeadm.yaml  --ignore-preflight-errors=DirAvailable--etc-kubernetes-manifests,DirAvailable--var-lib-minikube,DirAvailable--var-lib-minikube-etcd,FileAvailable--etc-kubernetes-manifests-kube-scheduler.yaml,FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml,FileAvailable--etc-kubernetes-manifests-kube-controller-manager.yaml,FileAvailable--etc-kubernetes-manifests-etcd.yaml,Port-10250,Swap,Mem": exit status 1
+stdout:
+[init] Using Kubernetes version: v1.21.2
+[preflight] Running pre-flight checks
+[preflight] Pulling images required for setting up a Kubernetes cluster
+[preflight] This might take a minute or two, depending on the speed of your internet connection
+[preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
+[certs] Using certificateDir folder "/var/lib/minikube/certs"
+[certs] Using existing ca certificate authority
+[certs] Using existing apiserver certificate and key on disk
+[certs] Using existing apiserver-kubelet-client certificate and key on disk
+[certs] Using existing front-proxy-ca certificate authority
+[certs] Using existing front-proxy-client certificate and key on disk
+[certs] Using existing etcd/ca certificate authority
+[certs] Using existing etcd/server certificate and key on disk
+[certs] Using existing etcd/peer certificate and key on disk
+[certs] Using existing etcd/healthcheck-client certificate and key on disk
+[certs] Using existing apiserver-etcd-client certificate and key on disk
+[certs] Using the existing "sa" key
+[kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+[kubeconfig] Writing "admin.conf" kubeconfig file
+[kubeconfig] Writing "kubelet.conf" kubeconfig file
+[kubeconfig] Writing "controller-manager.conf" kubeconfig file
+[kubeconfig] Writing "scheduler.conf" kubeconfig file
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Starting the kubelet
+[control-plane] Using manifest folder "/etc/kubernetes/manifests"
+[control-plane] Creating static Pod manifest for "kube-apiserver"
+[control-plane] Creating static Pod manifest for "kube-controller-manager"
+[control-plane] Creating static Pod manifest for "kube-scheduler"
+[etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
+[kubelet-check] Initial timeout of 40s passed.
+
+	Unfortunately, an error has occurred:
+		timed out waiting for the condition
+
+	This error is likely caused by:
+		- The kubelet is not running
+		- The kubelet is unhealthy due to a misconfiguration of the node in some way (required cgroups disabled)
+
+	If you are on a systemd-powered system, you can try to troubleshoot the error with the following commands:
+		- 'systemctl status kubelet'
+		- 'journalctl -xeu kubelet'
+
+	Additionally, a control plane component may have crashed or exited when started by the container runtime.
+	To troubleshoot, list all containers using your preferred container runtimes CLI.
+
+	Here is one example how you may list all Kubernetes containers running in docker:
+		- 'docker ps -a | grep kube | grep -v pause'
+		Once you have found the failing container, you can inspect its logs with:
+		- 'docker logs CONTAINERID'
+
+
+stderr:
+	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
+	[WARNING FileExisting-socat]: socat not found in system path
+error execution phase wait-control-plane: couldn't initialize a Kubernetes cluster
+To see the stack trace of this error execute with --v=5 or higher
+
+  - Generating certificates and keys ...
+  - Booting up control plane ...
+* 
+X Error starting cluster: wait: /bin/bash -c "sudo env PATH=/var/lib/minikube/binaries/v1.21.2:$PATH kubeadm init --config /var/tmp/minikube/kubeadm.yaml  --ignore-preflight-errors=DirAvailable--etc-kubernetes-manifests,DirAvailable--var-lib-minikube,DirAvailable--var-lib-minikube-etcd,FileAvailable--etc-kubernetes-manifests-kube-scheduler.yaml,FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml,FileAvailable--etc-kubernetes-manifests-kube-controller-manager.yaml,FileAvailable--etc-kubernetes-manifests-etcd.yaml,Port-10250,Swap,Mem": exit status 1
+stdout:
+[init] Using Kubernetes version: v1.21.2
+[preflight] Running pre-flight checks
+[preflight] Pulling images required for setting up a Kubernetes cluster
+[preflight] This might take a minute or two, depending on the speed of your internet connection
+[preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
+[certs] Using certificateDir folder "/var/lib/minikube/certs"
+[certs] Using existing ca certificate authority
+[certs] Using existing apiserver certificate and key on disk
+[certs] Using existing apiserver-kubelet-client certificate and key on disk
+[certs] Using existing front-proxy-ca certificate authority
+[certs] Using existing front-proxy-client certificate and key on disk
+[certs] Using existing etcd/ca certificate authority
+[certs] Using existing etcd/server certificate and key on disk
+[certs] Using existing etcd/peer certificate and key on disk
+[certs] Using existing etcd/healthcheck-client certificate and key on disk
+[certs] Using existing apiserver-etcd-client certificate and key on disk
+[certs] Using the existing "sa" key
+[kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+[kubeconfig] Writing "admin.conf" kubeconfig file
+[kubeconfig] Writing "kubelet.conf" kubeconfig file
+[kubeconfig] Writing "controller-manager.conf" kubeconfig file
+[kubeconfig] Writing "scheduler.conf" kubeconfig file
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Starting the kubelet
+[control-plane] Using manifest folder "/etc/kubernetes/manifests"
+[control-plane] Creating static Pod manifest for "kube-apiserver"
+[control-plane] Creating static Pod manifest for "kube-controller-manager"
+[control-plane] Creating static Pod manifest for "kube-scheduler"
+[etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
+[kubelet-check] Initial timeout of 40s passed.
+
+	Unfortunately, an error has occurred:
+		timed out waiting for the condition
+
+	This error is likely caused by:
+		- The kubelet is not running
+		- The kubelet is unhealthy due to a misconfiguration of the node in some way (required cgroups disabled)
+
+	If you are on a systemd-powered system, you can try to troubleshoot the error with the following commands:
+		- 'systemctl status kubelet'
+		- 'journalctl -xeu kubelet'
+
+	Additionally, a control plane component may have crashed or exited when started by the container runtime.
+	To troubleshoot, list all containers using your preferred container runtimes CLI.
+
+	Here is one example how you may list all Kubernetes containers running in docker:
+		- 'docker ps -a | grep kube | grep -v pause'
+		Once you have found the failing container, you can inspect its logs with:
+		- 'docker logs CONTAINERID'
+
+
+stderr:
+	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
+	[WARNING FileExisting-socat]: socat not found in system path
+error execution phase wait-control-plane: couldn't initialize a Kubernetes cluster
+To see the stack trace of this error execute with --v=5 or higher
+
+* 
+╭──────────────────────────────────────────────────────────────────╮
+│                                                                  │
+│    * If the above advice does not help, please let us know:      │
+│      https://github.com/kubernetes/minikube/issues/new/choose    │
+│                                                                  │
+│    * Please attach the following file to the GitHub issue:       │
+│    * - /root/.minikube/logs/lastStart.txt                        │
+│                                                                  │
+╰──────────────────────────────────────────────────────────────────╯
+
+X Exiting due to K8S_KUBELET_NOT_RUNNING: wait: /bin/bash -c "sudo env PATH=/var/lib/minikube/binaries/v1.21.2:$PATH kubeadm init --config /var/tmp/minikube/kubeadm.yaml  --ignore-preflight-errors=DirAvailable--etc-kubernetes-manifests,DirAvailable--var-lib-minikube,DirAvailable--var-lib-minikube-etcd,FileAvailable--etc-kubernetes-manifests-kube-scheduler.yaml,FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml,FileAvailable--etc-kubernetes-manifests-kube-controller-manager.yaml,FileAvailable--etc-kubernetes-manifests-etcd.yaml,Port-10250,Swap,Mem": exit status 1
+stdout:
+[init] Using Kubernetes version: v1.21.2
+[preflight] Running pre-flight checks
+[preflight] Pulling images required for setting up a Kubernetes cluster
+[preflight] This might take a minute or two, depending on the speed of your internet connection
+[preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
+[certs] Using certificateDir folder "/var/lib/minikube/certs"
+[certs] Using existing ca certificate authority
+[certs] Using existing apiserver certificate and key on disk
+[certs] Using existing apiserver-kubelet-client certificate and key on disk
+[certs] Using existing front-proxy-ca certificate authority
+[certs] Using existing front-proxy-client certificate and key on disk
+[certs] Using existing etcd/ca certificate authority
+[certs] Using existing etcd/server certificate and key on disk
+[certs] Using existing etcd/peer certificate and key on disk
+[certs] Using existing etcd/healthcheck-client certificate and key on disk
+[certs] Using existing apiserver-etcd-client certificate and key on disk
+[certs] Using the existing "sa" key
+[kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+[kubeconfig] Writing "admin.conf" kubeconfig file
+[kubeconfig] Writing "kubelet.conf" kubeconfig file
+[kubeconfig] Writing "controller-manager.conf" kubeconfig file
+[kubeconfig] Writing "scheduler.conf" kubeconfig file
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Starting the kubelet
+[control-plane] Using manifest folder "/etc/kubernetes/manifests"
+[control-plane] Creating static Pod manifest for "kube-apiserver"
+[control-plane] Creating static Pod manifest for "kube-controller-manager"
+[control-plane] Creating static Pod manifest for "kube-scheduler"
+[etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
+[kubelet-check] Initial timeout of 40s passed.
+
+	Unfortunately, an error has occurred:
+		timed out waiting for the condition
+
+	This error is likely caused by:
+		- The kubelet is not running
+		- The kubelet is unhealthy due to a misconfiguration of the node in some way (required cgroups disabled)
+
+	If you are on a systemd-powered system, you can try to troubleshoot the error with the following commands:
+		- 'systemctl status kubelet'
+		- 'journalctl -xeu kubelet'
+
+	Additionally, a control plane component may have crashed or exited when started by the container runtime.
+	To troubleshoot, list all containers using your preferred container runtimes CLI.
+
+	Here is one example how you may list all Kubernetes containers running in docker:
+		- 'docker ps -a | grep kube | grep -v pause'
+		Once you have found the failing container, you can inspect its logs with:
+		- 'docker logs CONTAINERID'
+
+
+stderr:
+	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
+	[WARNING FileExisting-socat]: socat not found in system path
+error execution phase wait-control-plane: couldn't initialize a Kubernetes cluster
+To see the stack trace of this error execute with --v=5 or higher
+
+* Suggestion: Check output of 'journalctl -xeu kubelet', try passing --extra-config=kubelet.cgroup-driver=systemd to minikube start
+* Related issue: https://github.com/kubernetes/minikube/issues/4172
+
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubeconfig: Configured
+
+Unable to connect to the server: dial tcp 172.31.14.87:8443: i/o timeout
+Unable to connect to the server: dial tcp 172.31.14.87:8443: i/o timeout
+Unable to connect to the server: dial tcp 172.31.14.87:8443: i/o timeout
+Unable to connect to the server: dial tcp 172.31.14.87:8443: i/o timeout
+Unable to connect to the server: dial tcp 172.31.14.87:8443: i/o timeout
+127.0.0.1 - - [25/Feb/2022 05:44:18] "POST / HTTP/1.1" 200 -
+211.69.198.51 - - [25/Feb/2022 06:38:46] "GET /v2/_catalog HTTP/1.1" 404 -
+127.0.0.1 - - [25/Feb/2022 07:31:38] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 07:33:35] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:23:32] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:30:34] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:36:31] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:41:47] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:42:20] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:43:00] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:43:54] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:44:56] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 08:46:27] "POST / HTTP/1.1" 200 -
+[D 220225 09:02:52 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220225 09:02:52 __init__:74] Using AWS region 'ap-south-1'
+[D 220225 09:02:52 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [25/Feb/2022 09:02:52] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 09:03:18] "POST / HTTP/1.1" 200 -
+[D 220225 09:04:23 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220225 09:04:23 __init__:74] Using AWS region 'ap-south-1'
+[D 220225 09:04:23 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [25/Feb/2022 09:04:23] "POST / HTTP/1.1" 200 -
+[D 220225 09:05:26 __init__:66] The configuration key `aws_region` is not set, looking in the environment instead for `AWS_REGION` or `AWS_DEFAULT_REGION`
+[D 220225 09:05:26 __init__:74] Using AWS region 'ap-south-1'
+[D 220225 09:05:26 __init__:83] Client will be using profile 'default' from boto3 session
+127.0.0.1 - - [25/Feb/2022 09:05:26] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Feb/2022 09:13:40] "POST / HTTP/1.1" 200 -

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AWS Experiment</title>
+
+  <!-- Theme style for progress bar -->
+  <link rel="stylesheet" href="/public/dist/css/progress.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/public/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="/public/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="/public/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="/public/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/public/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="/public/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="/public/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="/public/plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <!-- <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="/public/dist/img/WiproLogo.png" alt="WiproLogo" height="60" width="60">
+  </div> -->
+
+  <!-- Top Horizontal Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/" class="nav-link">Home</a>
+      </li>
+    </ul>
+
+    <!-- Right side of top navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+
+  <!-- Left Side Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="/" class="brand-link">
+      <img src="/public/dist/img/WiproLogo.png" alt="Wipro Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Wipro</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="/" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+            <i class="nav-icon fas fa-flask"></i>
+              <p>
+                Create hypothesis
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <div class="nav-link">
+                  <i class="fab fa-aws nav-icon"></i>
+                  <a href="/aws">
+                  <p>AWS</p>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link">
+                  <i class="fab fa-google nav-icon"></i>
+                  <a href="/">
+                  <p>GCP</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+            <i class="nav-icon far fa-chart-bar"></i>
+              <p>
+                System metrics
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <div class="nav-link">
+                  <i class="fab fa-aws nav-icon"></i>
+                  <a href="/aws/metrics">
+                  <p>AWS Cloudwatch</p>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+
+<!-- MAIN CONTENT HERE-->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">AWS Chaos</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active">AWS</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Main row -->
+            <div class="stepper-wrapper">
+                <div class="stepper-item completed">
+                  <div class="step-counter"><i class="fas fa-check"></i></div>
+                  <div class="step-name">Credentials</div>
+                </div>
+                <div class="stepper-item completed">
+                  <div class="step-counter"><i class="fas fa-check"></i></div>
+                  <div class="step-name">Service</div>
+                </div>
+                <div class="stepper-item completed">
+                  <div class="step-counter"><i class="fas fa-check"></i></div>
+                  <div class="step-name">Activity</div>
+                </div>
+                <div class="stepper-item active">
+                  <div class="step-counter">4</div>
+                  <div class="step-name">Parameters</div>
+                </div>
+                <div class="stepper-item">
+                    <div class="step-counter">5</div>
+                    <div class="step-name">Result</div>
+                </div>
+              </div>
+      </div><!-- /.container-fluid -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Select filters</h3>
+                    </div>
+                    <form action="" method="POST">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="filter_name">Name of filter:<i class="fas fa-asterisk"></i></label>
+                                <select name="filter_name" class="form-control" id="filter_name" required>
+                                    <option disabled selected>Choose the required filter</option>
+                                    <option value="affinity">affinity</option>
+                                    <option value="architecture">architecture</option>
+                                    <option value="availability-zone">availability-zone</option>
+                                    <option value="block-device-mapping.attach-time">block-device-mapping.attach-time</option>
+                                    <option value="block-device-mapping.delete-on-termination">block-device-mapping.delete-on-termination</option>
+                                    <option value="block-device-mapping.device-name">block-device-mapping.device-name</option>
+                                    <option value="block-device-mapping.status">block-device-mapping.status</option>
+                                    <option value="block-device-mapping.volume-id">block-device-mapping.volume-id</option>
+                                    <option value="client-token">client-token</option>
+                                    <option value="dns-name">dns-name</option>
+                                    <option value="group-id">group-id</option>
+                                    <option value="group-name">group-name</option>
+                                    <option value="hibernation-options.configured">hibernation-options.configured</option>
+                                    <option value="host-id">host-id</option>
+                                    <option value="hypervisor">hypervisor</option>
+                                    <option value="iam-instance-profile.arn">iam-instance-profile.arn</option>
+                                    <option value="image-id">image-id</option>
+                                    <option value="instance-id">instance-id</option>
+                                    <option value="instance-lifecycle">instance-lifecycle</option>
+                                    <option value="instance-state-code">instance-state-code</option>
+                                    <option value="instance-state-name">instance-state-name</option>
+                                    <option value="instance-type">instance-type</option>
+                                    <option value="instance.group-id">instance.group-id</option>
+                                    <option value="instance.group-name">instance.group-name</option>
+                                    <option value="ip-address">ip-address</option>
+                                    <option value="kernel-id">kernel-id</option>
+                                    <option value="key-name">key-name</option>
+                                    <option value="launch-index">launch-index</option>
+                                    <option value="launch-time">launch-time</option>
+                                    <option value="metadata-options.http-tokens">metadata-options.http-tokens</option>
+                                    <option value="metadata-options.http-put-response-hop-limit">metadata-options.http-put-response-hop-limit</option>
+                                    <option value="metadata-options.http-endpoint">metadata-options.http-endpoint</option>
+                                    <option value="monitoring-state">monitoring-state</option>
+                                    <option value="network-interface.addresses.private-ip-address">network-interface.addresses.private-ip-address</option>
+                                    <option value="network-interface.addresses.primary">network-interface.addresses.primary</option>
+                                    <option value="network-interface.addresses.association.public-ip">network-interface.addresses.association.public-ip</option>
+                                    <option value="network-interface.addresses.association.ip-owner-id">network-interface.addresses.association.ip-owner-id</option>
+                                    <option value="network-interface.association.public-ip">network-interface.association.public-ip</option>
+                                    <option value="network-interface.association.ip-owner-id">network-interface.association.ip-owner-id</option>
+                                    <option value="network-interface.association.allocation-id">network-interface.association.allocation-id</option>
+                                    <option value="network-interface.association.association-id">network-interface.association.association-id</option>
+                                    <option value="network-interface.attachment.attachment-id">network-interface.attachment.attachment-id</option>
+                                    <option value="network-interface.attachment.instance-id">network-interface.attachment.instance-id</option>
+                                    <option value="network-interface.attachment.instance-owner-id">network-interface.attachment.instance-owner-id</option>
+                                    <option value="network-interface.attachment.device-index">network-interface.attachment.device-index</option>
+                                    <option value="network-interface.attachment.status">network-interface.attachment.status</option>
+                                    <option value="network-interface.attachment.attach-time">network-interface.attachment.attach-time</option>
+                                    <option value="network-interface.attachment.delete-on-termination">network-interface.attachment.delete-on-termination</option>
+                                    <option value="network-interface.availability-zone">network-interface.availability-zone</option>
+                                    <option value="network-interface.description">network-interface.description</option>
+                                    <option value="network-interface.group-id">network-interface.group-id</option>
+                                    <option value="network-interface.group-name">network-interface.group-name</option>
+                                    <option value="network-interface.ipv6-addresses.ipv6-address">network-interface.ipv6-addresses.ipv6-address</option>
+                                    <option value="network-interface.mac-address">network-interface.mac-address</option>
+                                    <option value="network-interface.network-interface-id">network-interface.network-interface-id</option>
+                                    <option value="network-interface.owner-id">network-interface.owner-id</option>
+                                    <option value="network-interface.private-dns-name">network-interface.private-dns-name</option>
+                                    <option value="network-interface.requester-id">network-interface.requester-id</option>
+                                    <option value="network-interface.requester-managed">network-interface.requester-managed</option>
+                                    <option value="network-interface.status">network-interface.status</option>
+                                    <option value="network-interface.source-dest-check">network-interface.source-dest-check</option>
+                                    <option value="network-interface.subnet-id">network-interface.subnet-id</option>
+                                    <option value="network-interface.vpc-id">network-interface.vpc-id</option>
+                                    <option value="outpost-arn">outpost-arn</option>
+                                    <option value="owner-id">owner-id</option>
+                                    <option value="placement-group-name">placement-group-name</option>
+                                    <option value="placement-partition-number">placement-partition-number</option>
+                                    <option value="platform">platform</option>
+                                    <option value="private-dns-name">private-dns-name</option>
+                                    <option value="private-ip-address">private-ip-address</option>
+                                    <option value="product-code">product-code</option>
+                                    <option value="product-code.type">product-code.type</option>
+                                    <option value="ramdisk-id">ramdisk-id</option>
+                                    <option value="reason">reason</option>
+                                    <option value="requester-id">requester-id</option>
+                                    <option value="reservation-id">reservation-id</option>
+                                    <option value="root-device-name">root-device-name</option>
+                                    <option value="root-device-type">root-device-type</option>
+                                    <option value="source-dest-check">source-dest-check</option>
+                                    <option value="spot-instance-request-id">spot-instance-request-id</option>
+                                    <option value="state-reason-code">state-reason-code</option>
+                                    <option value="state-reason-message">state-reason-message</option>
+                                    <option value="subnet-id">subnet-id</option>
+                                    <option value="tag : &lt;key&rt;">tag : &lt;key&rt;</option>
+                                    <option value="tag-key">tag-key</option>
+                                    <option value="tenancy">tenancy</option>
+                                    <option value="virtualization-type">virtualization-type</option>
+                                    <option value="vpc-id">vpc-id</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="filter_value">Enter values for the selected filter(separated by a comma):<i class="fas fa-asterisk"></i></label>
+                                <input type='text' name="filter_value" class="form-control" id="filter_value" placeholder="Enter filter value(s)" required>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/aws/ec2" class="btn btn-default">Previous</a>
+                            <button type="submit" class="btn btn-primary float-right">Next</>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Action History</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="products-list product-list-in-card pr-2">
+                            <% if(user_history.length > 0) { %>
+                                <% for(i in user_history) { %>
+                                    <li class="item">
+                                        <div class="product-title">
+                                            <%= user_history[i].type %>
+                                            <span class="badge float-right">
+                                                <%= user_history[i].TimeCompleted %>
+                                            </span>
+                                        </div>
+                                        <div class="product-description">
+                                            <%= user_history[i].status %>
+                                        </div>
+                                    </li>
+                                <% } %>
+                            <% } else { %>
+                                <li class="item">
+                                    <div class="product-title">History is empty!</div>
+                                    <div class="product-description">
+                                        Completed experiments appear here
+                                    </div>
+                                </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+<!--Body-->
+
+
+<!-- jQuery -->
+<script src="/public/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="/public/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="/public/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- JQVMap -->
+<script src="/public/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="/public/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="/public/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="/public/plugins/moment/moment.min.js"></script>
+<script src="/public/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="/public/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="/public/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="/public/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/public/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/public/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/public/dist/js/pages/dashboard.js"></script>
+</body>
+</html>
